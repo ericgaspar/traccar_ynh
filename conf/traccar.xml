@@ -19,8 +19,19 @@
     -->
 
     <entry key='database.driver'>org.h2.Driver</entry>
-    <entry key='database.url'>jdbc:h2:./data/database</entry>
+    <entry key='database.url'>mysql://__DB_USER__:__DB_PWD__@127.0.0.1:3306/__DB_NAME__</entry>
     <entry key='database.user'>__DB_USER__</entry>
     <entry key='database.password'>__DB_PWD__</entry>
+
+
+    <entry key='web.port'>__PORT__</entry>
+    <entry key='media.path '>__DATA_DIR__</entry>
+
+    <entry key='mail.smtp.host'>localhost</entry>
+    <entry key='mail.smtp.port'>25</entry>
+    <entry key='mail.transport.protocol'>smtp</entry> 
+    <entry key='mail.smtp.starttls.enable'>false</entry> 
+    <entry key='mail.smtp.username'>__APP__</entry> 
+    <entry key='mail.smtp.password'>__MAIL_PWD__</entry> 
 
 </properties>

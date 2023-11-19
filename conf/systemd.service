@@ -1,5 +1,5 @@
 [Unit]
-Description=Small description of the service
+Description=Traccar: GPS tracking platform
 After=network.target
 
 [Service]
@@ -8,8 +8,6 @@ User=__APP__
 Group=__APP__
 WorkingDirectory=__INSTALL_DIR__/
 ExecStart=/usr/bin/java -jar tracker-server.jar __INSTALL_DIR__/conf/traccar.xml
-StandardOutput=append:/var/log/__APP__/__APP__.log
-StandardError=inherit
 
 # Sandboxing options to harden security
 # Depending on specificities of your service/app, you may need to tweak these
