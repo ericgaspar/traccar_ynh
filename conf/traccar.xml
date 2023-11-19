@@ -25,6 +25,7 @@
 
 
     <entry key='web.port'>__PORT__</entry>
+    
     <entry key='media.path '>__DATA_DIR__</entry>
 
     <entry key='mail.smtp.host'>localhost</entry>
@@ -32,6 +33,11 @@
     <entry key='mail.transport.protocol'>smtp</entry> 
     <entry key='mail.smtp.starttls.enable'>false</entry> 
     <entry key='mail.smtp.username'>__APP__</entry> 
-    <entry key='mail.smtp.password'>__MAIL_PWD__</entry> 
+    <entry key='mail.smtp.password'>__MAIL_PWD__</entry>
+
+    <entry key='ldap.url'>ldap://127.0.0.1</entry>
+    <entry key='ldap.port'>389</entry>
+    <entry key='ldap.base'>ou=users,dc=yunohost,dc=org</entry>
+    <entry key='ldap.searchFilter'>(&(|(objectclass=posixAccount))(uid={{username}})(permission=cn=__APP__.main,ou=permission,dc=yunohost,dc=org))</entry>
 
 </properties>
