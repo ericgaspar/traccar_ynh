@@ -12,11 +12,11 @@ version = "5.9~ynh1"
 maintainers = ["eric_G"]
 
 [upstream]
-license = "Apache-2.0"
+license = "GPL-3.0-Only"
 website = "https://www.traccar.org/"
 demo = "https://www.traccar.org/demo-server/"
 admindoc = "https://www.traccar.org/documentation/"
-code = "https://some.forge.com/example/example"
+code = "https://github.com/traccar/traccar-web"
 
 [integration]
 yunohost = ">= 11.2"
@@ -45,7 +45,7 @@ ram.runtime = "50M"
 
         [resources.sources.main]
         url = "https://github.com/traccar/traccar/releases/download/v5.9/traccar-other-5.9.zip"
-        sha256 = "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+        sha256 = "38eb9f5e1fb1e208143827985f08be7cef304e6c97dfd102d93a5cf6577d6b1d"
         autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
